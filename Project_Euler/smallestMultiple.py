@@ -12,4 +12,4 @@ def smallest_multiple(n):
         result = lcm(result, i)
     return result
 
-print(smallest_multiple(20))
+print(smallest_multiple(10))
