@@ -20,3 +20,5 @@ for i in range(1,1000):
                 print((i, j, k))
                 break
 
+            
+
