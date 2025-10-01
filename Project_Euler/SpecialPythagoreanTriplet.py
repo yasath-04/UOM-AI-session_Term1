@@ -7,18 +7,12 @@ def isPythTrip(a,b,c):
     else:
         return False
 
-def isSum1000(a,b,c):
-    if(a+b+c == 1000):
-        return True
-    else:
-        False
 
 for i in range(1,1000):
-    for j in range(1,1000):
-        for k in range(1,1000):
-            if(isPythTrip(i,j,k) and isSum1000(i,j,k)):
-                print((i, j, k))
-                break
+    for j in range(i,1000-i):
+        k = 1000-i-j
+        if(isPythTrip(i,j,k)):
+            return (i*j*k)
 
             
 
